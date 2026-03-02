@@ -9,7 +9,8 @@ upstream fe {
 
 map $http_user_agent $is_bot {
     default 0;
-    ~*googlebot|naverbot|yeti|kakaotalk|slackbot|facebookexternalhit|twitterbot|discordbot|applebot 1;
+    ~*naverbot|yeti|daumoa|kakaotalk-scrap 1;
+    ~*googlebot|slackbot|facebookexternalhit|twitterbot|discordbot|applebot 1;
 }
 
 server {
